@@ -1,0 +1,17 @@
+@import './Var.css';
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: var(--purple-plum);
+  background-color: var(--yellow-vanilla);
+}
+
+#root{
+  height: 100%;
+}
+
+body{
+  height: 100vh;
+}

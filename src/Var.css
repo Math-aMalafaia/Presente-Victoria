@@ -1,0 +1,33 @@
+:root {
+    /* 
+    ========================
+        Amarelo
+]   ========================
+    */
+   --yellow-solar: #ffd93d;
+   --yellow-honey: #f9c74f;
+   --yellow-golden: #e9b949;
+   --yellow-cream: #fff3b0;
+   --yellow-vanilla: #fff8d6;
+
+    /*
+    ========================
+        Vermelho
+    ========================
+    */
+    --red-love: #e63946;
+    --red-cherry: #d62839;
+    --red-wide: #9d174d;
+    --red-rose: #f76c7b;
+    --red-blush: #fbc4c4;
+    /*
+    ========================
+        Roxo
+    ========================
+    */
+    --purple-royal: #7b2cbf;
+    --purple-imperial: #5a189a;
+    --purple-plum: #3c096c;
+    --purple-lavender: #c77dff;
+    --purple-lilac: #e8d5ff;
+}

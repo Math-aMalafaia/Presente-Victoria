@@ -1,0 +1,54 @@
+@import '../../var.css';
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--red-rose);
+}
+
+.header-content{
+    width: 100%;
+    max-width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.header-logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--yellow-vanilla);
+    background: linear-gradient(to right, var(--purple-lavender), var(--yellow-golden));
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.header-nav-item a{
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.header-nav-item a:hover{
+    padding: 5px 5px;
+    border-radius: 5px;
+    color: var(--yellow-vanilla);
+    border: 1px solid var(--purple-plum);
+    background-color: var(--purple-lavender);
+    transition: 0.3s;
+}   
