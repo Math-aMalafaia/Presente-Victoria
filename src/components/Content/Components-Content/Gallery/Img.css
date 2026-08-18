@@ -1,0 +1,52 @@
+@import '../../../../Var.css';
+
+.img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+    border: 1px solid var(--purple-imperial);
+    border-radius: 10px;
+    background-color: var(--red-wide);
+    justify-self: start;
+}
+
+.img:hover{
+    box-shadow: 0px 0px 20px var(--purple-imperial);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.img-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px var(--purple-imperial);
+}
+
+.img-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: var(--yellow-cream);
+    background-color: var(--red-wide);
+    padding: 20px;
+}
+
+.img-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--yellow-solar);
+    background-color: var(--red-wide);
+}
+
+.img-description{
+    font-size: 16px;
+    color: var(--yellow-cream);
+    background-color: var(--red-wide);
+}
