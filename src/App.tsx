@@ -1,5 +1,6 @@
 
 import './App.css'
+import Content from './components/Content/Content' 
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 
@@ -7,13 +8,11 @@ import Header from './components/Header/Header'
 function App() {
 
   return (
-    <>
+    <div className="app">
       <Header />
-
-      <h1>OLa mundo </h1>
-
+      <Content />
       <Footer />
-    </>
+    </div>
   )
 }
 

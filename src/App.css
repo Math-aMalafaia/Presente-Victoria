@@ -6,6 +6,7 @@
   font-family: sans-serif;
   color: var(--purple-plum);
   background-color: var(--yellow-vanilla);
+  box-sizing: border-box;
 }
 
 #root{
@@ -14,4 +15,10 @@
 
 body{
   height: 100vh;
+}
+
+.app{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
