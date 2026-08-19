@@ -1,5 +1,6 @@
 import './Content.css'
 import Gallery from './Components-Content/Gallery/Gallery'
+import Letters from './Components-Content/Letters/Letters'
 
 function Content(){
     return(
@@ -10,6 +11,8 @@ function Content(){
             </div>
 
             <Gallery />
+
+            <Letters />
         </main>
     )
 }

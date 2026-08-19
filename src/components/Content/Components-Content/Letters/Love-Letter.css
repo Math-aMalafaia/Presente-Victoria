@@ -1,0 +1,35 @@
+@import '../../../../Var.css';
+
+.love-letter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 20px;
+    border: 1px solid var(--purple-imperial);
+    border-radius: 10px;
+    background-color: var(--red-wide);
+    justify-self: start;
+}
+
+.love-letter:hover{
+    box-shadow: 0px 0px 20px var(--purple-imperial);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.love-letter-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--yellow-solar);
+    background-color: var(--red-wide);
+}
+
+.love-letter-text{
+    align-items: normal;
+    font-size: 16px;
+    color: var(--yellow-cream);
+    background-color: var(--red-wide);
+}

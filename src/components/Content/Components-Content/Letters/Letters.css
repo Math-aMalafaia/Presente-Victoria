@@ -1,0 +1,7 @@
+@import '../../../../Var.css';
+
+.letters{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
