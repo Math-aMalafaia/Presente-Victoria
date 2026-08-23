@@ -1,6 +1,7 @@
 import './Content.css'
 import Gallery from './Components-Content/Gallery/Gallery'
 import Letters from './Components-Content/Letters/Letters'
+import TimeLine from './Components-Content/TimeLine/TimeLine';
 
 function Content(){
     return(
@@ -13,6 +14,8 @@ function Content(){
             <Gallery />
 
             <Letters />
+
+            <TimeLine />
         </main>
     )
 }

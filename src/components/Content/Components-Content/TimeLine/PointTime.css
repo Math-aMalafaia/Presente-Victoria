@@ -1,0 +1,121 @@
+@import '../../../../Var.css';
+
+.pointTime {
+    position: relative;
+    width: 100%;
+    min-height: 120px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.pointTime-marker{
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--red-love);
+    border: 3px solid var(--purple-royal);
+    box-shadow: 0 0 12px var(--purple-royal);
+    cursor: pointer;
+    transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.pointTime-marker span{
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--red-love);
+    color: var(--yellow-solar);
+}
+
+.pointTime-card{
+    position: absolute;
+    top: 50%;
+    width: 320px;
+    min-height: 150px;
+    padding: 18px;
+    border: 1px solid var(--purple-royal);
+    border-radius: 15px;
+    background-color: var(--red-love);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: 
+        opacity 0.35s ease,
+        visibility 0.35s ease,
+        transform 0.35s ease;
+    z-index: 4;
+}
+
+.pointTime:nth-of-type(odd) .pointTime-card{
+    left: calc(50% + 60px);
+
+    transform: 
+        translateY(-50%)
+        translateX(-20px);
+}
+
+.pointTime.pointTime:nth-of-type(even) .pointTime-card{
+    right: calc(50% + 60px);
+    transform: 
+        translateY(-50)
+        translateX(-20px);
+}
+
+.pointTime:hover .pointTime-card{
+    opacity: 1;
+    visibility: visible;
+}
+
+.pointTime:nth-of-type(odd):hover .pointTime-card{
+    transform: 
+        translateY(-50%)
+        translateX(0);
+}
+
+.pointTime:nth-of-type(even):hover .pointTime-card{
+    transform: 
+        translateY(-50%)
+        translateX(0);
+}
+
+.pointTime:hover .pointTime-marker{
+    transform: scale(1.15);
+    box-shadow: 0 0 20px var(--purple-royal);
+}
+
+.pointTime-img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--purple-royal);
+    margin-bottom: 15px;
+}
+
+.pointTime-title{
+    margin: 0 0 10px;
+    font-size: 1.3rem;
+    color: var(--yellow-solar);
+    background-color: var(--red-love);
+}
+
+.pointTime-text{
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--yellow-golden);
+    background-color: var(--red-love);
+}
