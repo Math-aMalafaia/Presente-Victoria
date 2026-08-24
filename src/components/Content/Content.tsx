@@ -11,7 +11,7 @@ function Content(){
                 <p>Aqui você irar passar por uma esperiencia sobre nossa historia.</p>
             </div>
 
-            <Gallery />
+            <Gallery limit={7}/>
 
             <Letters />
 

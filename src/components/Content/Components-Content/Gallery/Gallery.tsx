@@ -1,7 +1,19 @@
 import './Gallery.css'
 import ImgMemory from './Img'
+import { memory } from "./Memories"
 
-function Gallery(){
+interface GalleryProps {
+    limit?: number;
+}
+
+function Gallery({limit}: GalleryProps){
+
+    const memoryList = Object.values(memory);
+
+    const displayedMemories = limit
+        ? memoryList.slice(0, limit)
+        : memoryList;  
+        
     return(
         <>
             <div className='gallery-title'>
@@ -9,25 +21,16 @@ function Gallery(){
                 <p>Confira algumas das nossas fotos memoráveis!</p>
             </div>
 
-            <div>  
-                <ImgMemory 
-                img="src/assets/Memory/Somos-1.jpg" 
-                title="Somos 1" 
-                description="Não sei se neste tempo ja dava para notar,
-                 porem desde de aquele periodo eu ja ai tinha escolhido" 
-                />
-
-                <ImgMemory 
-                img="src/assets/Memory/Shoping.jpg" 
-                title="Como é Linda" 
-                description="Posso dizer, ja tinha recebido muitas fotos, porem por conta da memoria lotada, esse foi a primeira que eu pude salvar, e por isso ela é especial para mim" 
-                />
-
-                <ImgMemory 
-                img="src/assets/Memory/Dodoi.jpg" 
-                title="Dodoi" 
-                description="O Meu amor, você não imagina o quanto eu queria esta do seu lado neste dia so para cuidar de você." 
-                />
+            <div className='gallery'>  
+                {displayedMemories.map(
+                    (memory) => (
+                        <ImgMemory 
+                            key={memory.id}
+                            img={memory.img}
+                            title={memory.title}
+                            description={memory.description}
+                        />
+                    ))}
             </div>
         </>
     )

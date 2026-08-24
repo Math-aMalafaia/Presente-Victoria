@@ -16,16 +16,7 @@ function Footer(){
               </p>
             </div>
             
-            <nav className="footer-nav">
-
-              <h3 className="footer-nav-title"> Navegação </h3>
-              <ul className='footer-nav-list'>
-                <li className='footer-nav-item'><a href="#">Home</a></li>
-                <li className='footer-nav-item'><a href="#">Galeria</a></li>
-                <li className='footer-nav-item'><a href="#">Carta</a></li>
-                <li className='footer-nav-item'><a href="#">TimeLine</a></li>
-              </ul>
-            </nav>
+            
           </div>
         </footer>
         </>

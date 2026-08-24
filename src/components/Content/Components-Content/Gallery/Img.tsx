@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './Img.css'
 
 interface ImgProps {
@@ -7,12 +8,18 @@ interface ImgProps {
 }
 
 function ImgMemory({ img, title, description }: ImgProps) {
+
+    const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="img">
+        <div className={`img ${isOpen ? "active" : ""}`} onClick={() => setIsOpen(!isOpen)}>
             <img src={img} alt={title} className='img-img'/>
-            <div className="img-text">
-                <h3 className='img-title'>{title}</h3>
-                <p className='img-description'>{description}</p>
+            <div className='img-text'>
+                <div className='img-title'>
+                    <h3>{title}</h3>
+                </div>
+                <div className='img-description'>
+                    <p>{description}</p>
+                </div>
             </div>
         </div>
     );

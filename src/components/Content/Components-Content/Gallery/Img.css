@@ -1,17 +1,29 @@
 @import '../../../../Var.css';
 
 .img{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-    max-width: 1100px;
-    margin: 60px auto;
-    padding: 20px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    break-inside: avoid;
     border: 1px solid var(--purple-imperial);
-    border-radius: 10px;
+    border-radius: 16px;
     background-color: var(--red-wide);
-    justify-self: start;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3 ease;
+}
+
+.img img{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: 
+        traansform 0.4 ease,
+        filter 0.4 ease;
 }
 
 .img:hover{
@@ -39,14 +51,49 @@
 }
 
 .img-title{
+    padding: 14px 16px;
     font-size: 24px;
     font-weight: bold;
+    background-color: var(--red-wide);
+}
+
+.img-title h3{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.3;
     color: var(--yellow-solar);
     background-color: var(--red-wide);
 }
 
 .img-description{
-    font-size: 16px;
-    color: var(--yellow-cream);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
     background-color: var(--red-wide);
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 
+        opacity 0.3 ease,
+        trasform 0.3 ease;
+    pointer-events: none;
+}
+
+.img.active .img-description{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.img-description p{
+    margin: 0;
+    color: var(--yellow-solar);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    background-color: var(--red-wide);
+}
+
+.img:active img{
+    transform: scale(1.03);
+    filter: brightness(0.63);
 }
