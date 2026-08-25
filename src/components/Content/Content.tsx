@@ -13,7 +13,7 @@ function Content(){
 
             <Gallery limit={7}/>
 
-            <Letters />
+            <Letters limit={6}/>
 
             <TimeLine />
         </main>

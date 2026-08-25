@@ -1,10 +1,10 @@
-import Somos1 from "../../../../assets/Memory/Somos-1.jpg";
-import Shoping from "../../../../assets/Memory/Shoping.jpg";
-import Dodoi from "../../../../assets/Memory/Dodoi.jpg";
-import Teamo from "../../../../assets/Memory/Te-amo.jpg";
-import NMovie from "../../../../assets/Memory/N-Movie.jpg";
-import Roupa1 from "../../../../assets/Memory/Roupa-1.jpg";
-import Roupa2 from "../../../../assets/Memory/Roupa-2.jpg";
+import Somos1 from "../assets/Memory/Somos-1.jpg";
+import Shoping from "../assets/Memory/Shoping.jpg";
+import Dodoi from "../assets/Memory/Dodoi.jpg";
+import Teamo from "../assets/Memory/Te-amo.jpg";
+import NMovie from "../assets/Memory/N-Movie.jpg";
+import Roupa1 from "../assets/Memory/Roupa-1.jpg";
+import Roupa2 from "../assets/Memory/Roupa-2.jpg";
 
 export const memory = [
     {

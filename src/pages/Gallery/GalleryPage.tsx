@@ -1,4 +1,4 @@
-import './GalleryPage.css'
+
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import Gallery from '../../components/Content/Components-Content/Gallery/Gallery';

@@ -11,9 +11,9 @@ function Header(){
 
                     <nav className="header-nav">
                         <ul className="header-nav-list">
-                            <li className="header-nav-item"><a href="">Home</a></li>
-                            <li className="header-nav-item"><a href="">Galeria</a></li>
-                            <li className="header-nav-item"><a href="">Carta</a></li>
+                            <li className="header-nav-item"><a href="/">Home</a></li>
+                            <li className="header-nav-item"><a href="/Gallery">Galeria</a></li>
+                            <li className="header-nav-item"><a href="/Cartas">Carta</a></li>
                             <li className="header-nav-item"><a href="">TimeLine</a></li>
                         </ul>
                     </nav>

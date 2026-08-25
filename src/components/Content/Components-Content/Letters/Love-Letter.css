@@ -1,35 +1,70 @@
 @import '../../../../Var.css';
 
 .love-letter{
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 40px;
     max-width: 500px;
     margin: 60px auto;
-    padding: 20px;
+    padding: 30px;
+    gap: 20px;
+    box-sizing: border-box;
     border: 1px solid var(--purple-imperial);
     border-radius: 10px;
     background-color: var(--red-wide);
-    justify-self: start;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    transition: 
+        trasform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .love-letter:hover{
     box-shadow: 0px 0px 20px var(--purple-imperial);
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
+    transform: translateY(-5px);
 }
 
 .love-letter-title{
+    margin: 0;
+    padding: 15px;
     font-size: 24px;
     font-weight: bold;
+    text-align: center;
     color: var(--yellow-solar);
+    border-bottom: 1px solid var(--purple-imperial);
+    background-color: var(--red-wide);
+}
+
+.love-letter-content{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 
+        max-height 0.6s ease,
+        opacity 0.4s ease,
+        transform 0.4s ease;
     background-color: var(--red-wide);
 }
 
 .love-letter-text{
-    align-items: normal;
+    margin: 0 0 18px;
     font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
     color: var(--yellow-cream);
     background-color: var(--red-wide);
+}
+
+.love-letter.active{
+    box-shadow: 
+        0 0 25px var(--purple-imperial);
+    transform: translateY(-3px);
+}
+
+.love-letter.active .love-letter-content{
+    max-height: 1000px;
+    opacity: 1;
+    transform: translateY(0);
 }

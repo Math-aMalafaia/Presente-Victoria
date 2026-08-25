@@ -1,6 +1,6 @@
 import './Gallery.css'
 import ImgMemory from './Img'
-import { memory } from "./Memories"
+import { memory } from "../../../../data/Memories"
 
 interface GalleryProps {
     limit?: number;
@@ -12,8 +12,7 @@ function Gallery({limit}: GalleryProps){
 
     const displayedMemories = limit
         ? memoryList.slice(0, limit)
-        : memoryList;  
-        
+        : memoryList;   
     return(
         <>
             <div className='gallery-title'>
