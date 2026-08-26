@@ -2,9 +2,9 @@
 
 .pointTime {
     position: relative;
-    width: 100%;
-    min-height: 120px;
-    margin-bottom: 100px;
+    width: 250px;
+    min-width: 250px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,6 @@
 
 .pointTime-card{
     position: absolute;
-    top: 50%;
     width: 320px;
     min-height: 150px;
     padding: 18px;
@@ -58,17 +57,18 @@
 }
 
 .pointTime:nth-of-type(odd) .pointTime-card{
-    left: calc(50% + 60px);
-
+    left: 50%;
+    bottom: calc(50% + 50px);
     transform: 
         translateY(-50%)
-        translateX(-20px);
+        translateX(20px);
 }
 
 .pointTime.pointTime:nth-of-type(even) .pointTime-card{
-    right: calc(50% + 60px);
+    left: 50%;
+    top: calc(50% + 50px);
     transform: 
-        translateY(-50)
+        translateY(-50%)
         translateX(-20px);
 }
 
@@ -79,14 +79,14 @@
 
 .pointTime:nth-of-type(odd):hover .pointTime-card{
     transform: 
-        translateY(-50%)
-        translateX(0);
+        translateX(-50%)
+        translateY(0);
 }
 
 .pointTime:nth-of-type(even):hover .pointTime-card{
     transform: 
-        translateY(-50%)
-        translateX(0);
+        translateX(-50%)
+        translateY(0);
 }
 
 .pointTime:hover .pointTime-marker{
