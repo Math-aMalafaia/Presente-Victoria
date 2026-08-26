@@ -25,8 +25,8 @@
     box-shadow: 0 0 12px var(--purple-royal);
     cursor: pointer;
     transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .pointTime-marker span{
@@ -57,7 +57,6 @@
 }
 
 .pointTime:nth-of-type(odd) .pointTime-card{
-    left: 50%;
     bottom: calc(50% + 50px);
     transform: 
         translateY(-50%)
@@ -65,7 +64,6 @@
 }
 
 .pointTime.pointTime:nth-of-type(even) .pointTime-card{
-    left: 50%;
     top: calc(50% + 50px);
     transform: 
         translateY(-50%)
