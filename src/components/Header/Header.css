@@ -4,7 +4,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid var(--red-rose);
+    background-color: var(--purple-plum);
+    border-bottom: 2px solid var(--red-loev);
 }
 
 .header-content{
@@ -20,8 +21,8 @@
 .header-logo{
     font-size: 30px;
     font-weight: bold;
-    color: var(--yellow-vanilla);
-    background: linear-gradient(to right, var(--purple-lavender), var(--yellow-golden));
+    color: var(--purple-plum);
+    background: linear-gradient(to right, var(--yellow-golden), var(--yellow-solar));
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -41,13 +42,14 @@
 
 .header-nav-item a{
     text-decoration: none;
+    color: var(--yellow-cream);
+    transition: 0.3s;
 }
 
 .header-nav-item a:hover{
     padding: 5px 5px;
     border-radius: 5px;
-    color: var(--yellow-vanilla);
-    border: 1px solid var(--purple-plum);
-    background-color: var(--purple-lavender);
-    transition: 0.3s;
+    color: var(--yellow-solar);
+    background-color: var(--purple-royal);
+    border: 1px solid var(--purple-lavender);
 }   
