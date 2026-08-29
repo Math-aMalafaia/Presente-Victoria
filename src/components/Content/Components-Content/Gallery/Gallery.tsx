@@ -1,6 +1,7 @@
 import './Gallery.css'
 import ImgMemory from './Img'
 import { memory } from "../../../../data/Memories"
+import { Images } from '@phosphor-icons/react';
 
 interface GalleryProps {
     limit?: number;
@@ -16,7 +17,7 @@ function Gallery({limit}: GalleryProps){
     return(
         <>
             <div className='gallery-title'>
-                <h2>Galeria de Imagens</h2>
+                <h2> <Images weight='duotone'/> Galeria de Imagens</h2>
                 <p>Confira algumas das nossas fotos memoráveis!</p>
             </div>
 

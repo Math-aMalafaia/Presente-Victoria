@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Img.css'
+import { Image, HeartStraight } from '@phosphor-icons/react';
 
 interface ImgProps {
     img: string;
@@ -15,9 +16,11 @@ function ImgMemory({ img, title, description }: ImgProps) {
             <img src={img} alt={title} className='img-img'/>
             <div className='img-text'>
                 <div className='img-title'>
+                    <Image weight='fill'/>
                     <h3>{title}</h3>
                 </div>
                 <div className='img-description'>
+                    <HeartStraight weight='fill'/>
                     <p>{description}</p>
                 </div>
             </div>

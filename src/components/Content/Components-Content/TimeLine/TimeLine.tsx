@@ -2,6 +2,7 @@ import './TimeLine.css';
 import PointTime from './PointTime';
 import { timeLine } from '../../../../data/TimeLine';
 import { useRef, useState } from 'react';
+import { CaretLeftIcon, CaretRightIcon  } from '@phosphor-icons/react/dist/ssr';
 
 function TimeLine(){
 
@@ -66,7 +67,7 @@ function TimeLine(){
                         onClick={previousPoint}
                         disabled={currentPoint === 0}
                     >
-                        olsa
+                        <CaretLeftIcon size={24} weight='bold'/>
                     </button>
 
                     <span>
@@ -77,7 +78,7 @@ function TimeLine(){
                         onClick={nextPoint}
                         disabled={currentPoint === timeLineList.length - 1}
                     >
-                        ola
+                        <CaretRightIcon size={24} weight='bold'/>
                     </button>
                 </div>
 
