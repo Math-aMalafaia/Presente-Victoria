@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     background-color: var(--purple-plum);
-    border-bottom: 2px solid var(--red-loev);
+    border-bottom: 2px solid var(--red-love);
 }
 
 .header-content{
@@ -22,7 +22,7 @@
     font-size: 30px;
     font-weight: bold;
     color: var(--purple-plum);
-    background: linear-gradient(to right, var(--yellow-golden), var(--yellow-solar));
+    background: linear-gradient(to right, var(--yellow-cream), var(--yellow-solar));
     padding: 5px 10px;
     border-radius: 5px;
 }

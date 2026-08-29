@@ -4,7 +4,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    border-top: 1px solid var(--red-rose);
+    background-color: var(--purple-imperial);
+    border-top: 2px solid var(--red-love);
 }
 
 .footer-content{
@@ -19,8 +20,8 @@
 .footer-logo{
     margin-bottom: 16px;
     font-weight: bold;
-    color: var(--yellow-vanilla);
-    background: linear-gradient(to right, var(--purple-lavender), var(--yellow-golden));
+    color: var(--purple-plum);
+    background: linear-gradient(to right, var(--yellow-solar), var(--yellow-cream));
     padding: 5px 10px;
     border-radius: 5px;
     justify-self: start;
@@ -28,7 +29,7 @@
 
 .footer-text p{
     font-size: 14px;
-    color: var(--purple-plum);
+    color: var(--yellow-cream);
     line-height: 1.5;
 }
 
