@@ -24,8 +24,8 @@ function TimeLine(){
 
             points[nextIndex].scrollIntoView({
                 behavior: 'smooth',
-                block: 'nearest',
-                inline: 'center'
+                inline: 'center',
+                block: 'nearest'
             });
 
             setCurrentPoint(nextIndex);
@@ -45,8 +45,8 @@ function TimeLine(){
         if (points && points[previousIndex]) {
             points[previousIndex].scrollIntoView({
                 behavior: 'smooth',
-                block: 'nearest',
-                inline: 'center'
+                inline: 'center',
+                block: 'nearest'
             });
             
             setCurrentPoint(previousIndex);
@@ -65,7 +65,6 @@ function TimeLine(){
                     <button 
                         onClick={previousPoint}
                         disabled={currentPoint === 0}
-                        aria-label="Memória anterior"
                     >
                         olsa
                     </button>
@@ -77,14 +76,13 @@ function TimeLine(){
                     <button 
                         onClick={nextPoint}
                         disabled={currentPoint === timeLineList.length - 1}
-                        aria-label="Próximo moméria"
                     >
                         ola
                     </button>
                 </div>
 
                 <div className='timeLine-Text'>
-                    <div className='timeLine-content'>
+                    <div className='timeLine-content' ref={timeLineRef}>
                         {(timeLineList.map(
                             (timeLine) => (
                                 <PointTime 
@@ -97,7 +95,20 @@ function TimeLine(){
                                 )
                             ))}
                     </div>
+
                 </div>
+                    <div className='timeline-indicators'>
+                        {timeLineList.map((_, index) => (
+                            <span 
+                                key={index}
+                                className={
+                                    index === currentPoint
+                                        ? 'active'
+                                        : ''
+                                }
+                            />
+                        ))}
+                    </div>
 
             </div>
         </>

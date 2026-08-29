@@ -2,17 +2,28 @@
 
 .pointTime {
     position: relative;
-    width: 250px;
-    min-width: 250px;
-    height: 400px;
+    width: 100%;
+    min-width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     box-sizing: border-box;
 }
 
+.pointTime-line{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    transform: translateY(-50%);
+    background-color: var(--purple-imperial);
+    opacity: 0.35;
+    z-index: 1;
+}
+
 .pointTime-marker{
-    position: relative;
+    position: absolute;
     z-index: 5;
     display: flex;
     align-items: center;
@@ -33,14 +44,14 @@
     font-size: 0.8rem;
     font-weight: bold;
     text-align: center;
-    background-color: var(--red-love);
     color: var(--yellow-solar);
+    background-color: var(--red-love);
 }
 
 .pointTime-card{
     position: absolute;
     left: 50%;
-    width: 320px;
+    width: min(320px, 90%);
     min-height: 150px;
     padding: 18px;
     border: 1px solid var(--purple-royal);
@@ -48,24 +59,24 @@
     background-color: var(--red-love);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
+    z-index: 4;
     opacity: 0;
     visibility: hidden;
     transition: 
         opacity 0.35s ease,
         visibility 0.35s ease,
         transform 0.35s ease;
-    z-index: 4;
 }
 
 .pointTime:nth-of-type(odd) .pointTime-card{
-    bottom: calc(50% + 50px);
+    bottom: calc(50% + 55px);
     transform: 
         translateY(-50%)
         translateX(20px);
 }
 
 .pointTime.pointTime:nth-of-type(even) .pointTime-card{
-    top: calc(50% + 50px);
+    top: calc(50% + 55px);
     transform: 
         translateY(-50%)
         translateX(-20px);
@@ -89,7 +100,8 @@
 }
 
 .pointTime:hover .pointTime-marker{
-    transform: scale(1.15);
+    transform: 
+        scale(1.15);
     box-shadow: 0 0 20px var(--purple-royal);
 }
 

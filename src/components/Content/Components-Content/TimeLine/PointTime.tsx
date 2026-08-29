@@ -11,6 +11,7 @@ function PointTime({title, data, description, img}: PointProps) {
     return(
         <>
             <div className='pointTime'>
+                <div className='pointTime-line'></div>
                 <div className='pointTime-marker'>
                     <span>{data}</span>
                 </div>

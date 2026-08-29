@@ -1,13 +1,12 @@
 @import '../../../../Var.css';
 
 .timeLine {
-    position: relative;
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px 20px 100px;
-    text-align: center;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .timeLine-title h2 {
@@ -17,54 +16,8 @@
 }
 
 .timeLine-title > p {
-    margin: 0 0 80px;
+    margin: 0 0 25px;
     font-size: 1.1rem;
-}
-
-.timeLine-scroll-text{
-    margin-bottom: 15px;
-    font-size: 0.85rem;
-    color: var(--purple-imperial);
-    opacity: 0.8;
-}
-
-.timeLine-Text{
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    box-sizing: border-box;
-    scrollbar-width: thin;
-    -webkit-overflow-scrolling: touch;
-}
-
-.timeLine-content{
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: max-content;
-    min-width: 100%;
-    min-height: 800px;
-    padding: 0 60px ;
-    box-sizing: border-box;
-}
-
-.timeLine-content::before{
-    content: '';
-    position:  absolute;
-    top: 50%;
-    left: 60px;
-    width: calc(100% - 120px);
-    height: 3px;
-    transform: translateY(-50%);
-    background-color: var(--purple-imperial);
-    z-index: 1;
-}
-
-
-.timeLine-content > *{
-    flex: 0 0 250px;
 }
 
 .timeLine-controls{
@@ -76,8 +29,8 @@
 }
 
 .timeLine-controls button{
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     border: 2px solid var(--purple-royal);
     background-color: var(--red-love);
@@ -95,7 +48,7 @@
     box-shadow: 0 0 15px var(--purple-royal);
 }
 
-.timeLine-constrols button:disabled{
+.timeLine-controls button:disabled{
     opacity: 0.3;
     cursor: not-allowed;
 }
@@ -106,3 +59,57 @@
     font-weight: bold;
     color: var(--purple-imperial);
 }
+
+.timeline-indicators{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.timeline-indicators span{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--purple-imperial);
+    opacity: 0.35;
+    transition: 
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.timeline-indicators span.active{
+    transform: scale(1.4);
+    opacity: 1;
+}
+
+.timeLine-Text{
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.timeLine-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    min-width: 100%;
+    height: 650px;
+    box-sizing: border-box;
+}
+
+
+.timeLine-content > *{
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+
