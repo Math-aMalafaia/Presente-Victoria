@@ -2,82 +2,93 @@
 
 > Um espaço digital criado para guardar, preservar e celebrar as memórias de Matheus e Victoria.
 
-## 💖 Sobre o projeto
+<div align="center">
 
-O **VicMath** é um projeto que nasceu com o objetivo de guardar as memórias e tudo aquilo que é importante no relacionamento de **Matheus e Victoria**, transformando experiências e lembranças em uma experiência digital.
+**Um presente em forma de site, construído com código, memórias e carinho.** ❤️
 
-A ideia central é criar um ambiente desenvolvido especialmente para a Victoria, reunindo **fotos, histórias, memórias, textos, momentos específicos e pequenas lembranças** que fazem parte da nossa história juntos.
-
-Mais do que um projeto de desenvolvimento web, o VicMath representa uma forma de transformar sentimentos e momentos importantes em algo que possa ser revisitado e preservado ao longo do tempo.
+</div>
 
 ---
 
-## 🎯 Objetivo
+## 💖 Sobre o projeto
 
-O principal objetivo do projeto é desenvolver um espaço digital especial capaz de representar parte da nossa história juntos.
+O **VicMath** é um projeto pessoal desenvolvido para transformar momentos importantes da história de **Matheus e Victoria** em uma experiência digital.
 
-Além de demonstrar todo o meu carinho e amor pela Victoria, o projeto também serve como uma oportunidade para aplicar e desenvolver conhecimentos relacionados ao **desenvolvimento web, React e TypeScript**.
+A aplicação reúne diferentes formas de preservar essas lembranças, como **fotografias, cartas, textos e uma linha do tempo**, organizadas em uma interface criada especialmente para o projeto.
 
-Dessa forma, o VicMath une dois objetivos:
+Mais do que um exercício de desenvolvimento web, o VicMath nasceu com um propósito pessoal: criar um lugar onde algumas memórias possam ser revisitadas e preservadas ao longo do tempo.
 
-* ❤️ Criar algo especial para a Victoria;
-* 💻 Colocar em prática meus conhecimentos de desenvolvimento.
+---
+
+## 🎯 Objetivos
+
+O projeto possui dois objetivos principais:
+
+- ❤️ Criar um presente pessoal e significativo para a Victoria;
+- 💻 Aplicar e desenvolver conhecimentos de desenvolvimento web utilizando React, TypeScript e CSS.
+
+O VicMath também funciona como um projeto prático de aprendizado, permitindo experimentar **componentização, roteamento, organização de arquivos, responsividade, reutilização de componentes e construção de interfaces**.
 
 ---
 
 ## ✨ Funcionalidades
 
-O projeto possui e/ou pretende possuir diferentes recursos voltados para a organização e apresentação das nossas memórias.
+Atualmente, o projeto conta com diferentes áreas destinadas à apresentação das memórias:
 
-* 📸 Galeria de fotos;
-* 💌 Cartas e textos;
-* 📖 Histórias e momentos importantes;
-* 🕰️ Linha do tempo do relacionamento;
-* 🏠 Página inicial personalizada;
-* 🎨 Tema e identidade visual personalizados;
-* ✨ Animações e interações;
-* 💭 Espaços destinados a memórias específicas.
+- 🏠 **Página inicial** — apresenta o projeto e seus principais conteúdos;
+- 📸 **Galeria** — reúne fotografias e memórias em uma composição visual;
+- 💌 **Cartas** — apresenta cartas e textos escritos para a Victoria;
+- 🕰️ **Linha do tempo** — organiza momentos importantes da história em uma timeline interativa;
+- 🧩 **Componentes reutilizáveis** — elementos como imagens, cartas e pontos da timeline são organizados para evitar repetição de código;
+- 🎨 **Identidade visual personalizada** — interface construída a partir de uma paleta própria de amarelos, vermelhos e roxos;
+- ✨ **Interações e animações** — pequenos movimentos e efeitos visuais utilizados para tornar a experiência mais dinâmica;
+- 📱 **Interface responsiva** — estrutura pensada para diferentes tamanhos de tela.
 
-> Algumas funcionalidades ainda estão em desenvolvimento e podem receber alterações ao longo do projeto.
+> O projeto continua recebendo refinamentos visuais e técnicos antes da publicação da primeira versão.
 
 ---
 
 ## 🛠️ Tecnologias
 
-| Tecnologia     | Utilidade                                 |
-| -------------- | ----------------------------------------- |
-| **React**      | Construção da interface e dos componentes |
-| **TypeScript** | Tipagem e maior segurança no código       |
-| **Vite**       | Ambiente de desenvolvimento e build       |
-| **CSS**        | Estilização e identidade visual           |
-| **Git**        | Controle de versionamento do código       |
-| **GitHub**     | Hospedagem e gerenciamento do repositório |
+| Tecnologia | Utilização |
+|---|---|
+| **React** | Construção da interface e dos componentes |
+| **TypeScript** | Tipagem e segurança durante o desenvolvimento |
+| **Vite** | Ambiente de desenvolvimento e geração do build |
+| **CSS** | Estilização, responsividade e identidade visual |
+| **React Router** | Navegação entre as páginas da aplicação |
+| **Lucide React** | Ícones utilizados na interface |
+| **React Icons** | Biblioteca complementar de ícones |
+| **Phosphor Icons** | Biblioteca de ícones utilizada no projeto |
+| **ESLint** | Análise e padronização do código |
+| **Git** | Controle de versão |
+| **GitHub** | Hospedagem do código-fonte |
 
 ---
 
 ## 🎨 Identidade visual
 
-A identidade visual do VicMath foi pensada a partir de **três grupos principais de cores**, cada um representando uma parte importante do projeto.
+A identidade visual do VicMath foi construída a partir de três famílias principais de cores. Cada uma possui um significado dentro do projeto.
 
 ### 💛 Amarelo — Victoria
 
-O amarelo representa a **cor favorita da Victoria** e, por isso, ocupa um papel importante na identidade visual do projeto.
+O amarelo representa uma das principais características visuais associadas à Victoria e ocupa um papel importante na identidade do site.
 
 ### ❤️ Vermelho — Amor
 
-O vermelho representa sentimentos como **paixão, amor, intensidade e carinho**, sendo utilizado como uma das principais cores relacionadas ao relacionamento.
+O vermelho representa **amor, paixão, carinho e intensidade**, sendo utilizado para reforçar a temática romântica do projeto.
 
 ### 💜 Roxo — Matheus
 
-O roxo representa uma das **cores favoritas do Matheus** e complementa a identidade visual do projeto.
+O roxo representa uma das cores favoritas do Matheus e completa a identidade visual do VicMath.
 
-> Mesmo sendo daltônico, o roxo continua sendo uma das minhas cores favoritas. 💜
-
-A combinação dessas três famílias de cores busca criar uma identidade visual **equilibrada, romântica e pessoal**, representando características importantes de nós dois.
+A combinação das três famílias procura equilibrar o aspecto **romântico, pessoal e moderno** da aplicação.
 
 ---
 
 ## 🌈 Paleta de cores
+
+O projeto utiliza **15 cores**, divididas em cinco variações de cada família.
 
 ### 💛 Amarelo — Victoria
 
@@ -109,56 +120,87 @@ A combinação dessas três famílias de cores busca criar uma identidade visual
 --purple-lilac: #e8d5ff;
 ```
 
+Além das cores base, o projeto utiliza variáveis semânticas em `Var.css` para facilitar a manutenção e manter a identidade visual consistente entre os componentes.
+
 ---
 
 ## 📂 Estrutura do projeto
 
-A estrutura do projeto será organizada de forma modular, buscando separar responsabilidades e facilitar a manutenção e evolução da aplicação.
+A aplicação utiliza uma organização baseada em **componentes e páginas**, separando responsabilidades e facilitando a manutenção do código.
 
 ```text
-VicMath/
+Presente-Victoria/
 │
 ├── public/
+│   ├── favicon.svg
+│   └── icons.svg
 │
 ├── src/
 │   ├── assets/
+│   │   ├── Memory/
+│   │   └── hero.png
 │   │
 │   ├── components/
+│   │   ├── Content/
+│   │   │   └── Components-Content/
+│   │   │       ├── Gallery/
+│   │   │       ├── Letters/
+│   │   │       └── TimeLine/
+│   │   ├── Footer/
+│   │   └── Header/
 │   │
 │   ├── pages/
+│   │   ├── Gallery/
+│   │   ├── Home/
+│   │   ├── Letters/
+│   │   └── TimeLine/
 │   │
-│   ├── services/
-│   │
-│   ├── styles/
-│   │
+│   ├── App.css
 │   ├── App.tsx
+│   ├── Var.css
 │   └── main.tsx
 │
 ├── .gitignore
+├── eslint.config.js
+├── index.html
 ├── package.json
+├── package-lock.json
 ├── tsconfig.json
 ├── vite.config.ts
 └── README.md
 ```
 
-> A estrutura poderá ser modificada conforme novas funcionalidades forem adicionadas ao projeto.
+> A estrutura pode continuar evoluindo conforme novas funcionalidades e refinamentos forem adicionados.
 
 ---
 
-## 🚀 Como executar o projeto
+## 🧭 Navegação
 
-Para executar o VicMath localmente, é necessário possuir o **Node.js** instalado.
+A aplicação é organizada em páginas independentes utilizando **React Router**.
+
+| Rota | Página |
+|---|---|
+| `/` | Página inicial |
+| `/Gallery` | Galeria de memórias |
+| `/Cartas` | Cartas e textos |
+| `/TimeLine` | Linha do tempo |
+
+---
+
+## 🚀 Como executar localmente
+
+Para executar o projeto em sua máquina, é necessário ter o **Node.js** instalado.
 
 ### 1. Clone o repositório
 
 ```bash
-git clone URL_DO_REPOSITORIO
+git clone https://github.com/Math-aMalafaia/Presente-Victoria.git
 ```
 
-### 2. Acesse a pasta do projeto
+### 2. Acesse a pasta
 
 ```bash
-cd VicMath
+cd Presente-Victoria
 ```
 
 ### 3. Instale as dependências
@@ -167,111 +209,122 @@ cd VicMath
 npm install
 ```
 
-### 4. Inicie o servidor de desenvolvimento
+### 4. Execute o servidor de desenvolvimento
 
 ```bash
 npm run dev
 ```
 
-Após executar o comando, o Vite exibirá no terminal o endereço local para acessar a aplicação.
+O Vite exibirá no terminal o endereço local para acessar a aplicação.
+
+### Outros comandos
+
+Gerar a versão de produção:
+
+```bash
+npm run build
+```
+
+Executar a verificação do ESLint:
+
+```bash
+npm run lint
+```
+
+Visualizar localmente o build de produção:
+
+```bash
+npm run preview
+```
 
 ---
 
 ## 🌐 Demonstração
 
-> 🚧 O projeto ainda está em desenvolvimento.
+🚧 **O site ainda não está publicado.**
 
-Quando o VicMath estiver publicado, o endereço da aplicação poderá ser adicionado aqui:
-
-```text
-https://seu-site.com
-```
+Após a conclusão da revisão final e do processo de deploy, o endereço da aplicação será adicionado nesta seção.
 
 ---
 
 ## 📸 Screenshots
 
-Esta seção será utilizada para apresentar algumas telas do VicMath.
+As screenshots serão adicionadas após a publicação da primeira versão do VicMath.
 
-### Página inicial
+### 🏠 Página inicial
 
-> 🚧 Screenshot será adicionada após a implementação da interface.
+*Em breve.*
 
-### Galeria de memórias
+### 📸 Galeria
 
-> 🚧 Screenshot será adicionada após a implementação da funcionalidade.
+*Em breve.*
 
-### Linha do tempo
+### 💌 Cartas
 
-> 🚧 Screenshot será adicionada após a implementação da funcionalidade.
+*Em breve.*
+
+### 🕰️ Linha do tempo
+
+*Em breve.*
 
 ---
 
 ## 🧠 Aprendizados
 
-O VicMath também funciona como um projeto de aprendizado e prática em desenvolvimento web.
+O VicMath foi desenvolvido também como uma forma de colocar conhecimentos de desenvolvimento web em prática.
 
-Durante seu desenvolvimento, serão trabalhados conceitos como:
+Entre os principais conceitos trabalhados estão:
 
-* Componentização com React;
-* TypeScript;
-* Organização e arquitetura de projetos;
-* Criação de interfaces responsivas;
-* Estilização com CSS;
-* Gerenciamento de estados;
-* Reutilização de componentes;
-* Organização de arquivos;
-* Git e GitHub;
-* Boas práticas de desenvolvimento;
-* Desenvolvimento de experiências interativas.
-
-Além do conhecimento técnico, o projeto também representa uma oportunidade de aprender como transformar uma ideia pessoal em uma aplicação web completa.
+- Componentização com React;
+- Desenvolvimento utilizando TypeScript;
+- Criação de componentes reutilizáveis;
+- Organização de projetos React;
+- React Router e navegação entre páginas;
+- Responsividade com CSS;
+- Criação de uma identidade visual através de variáveis CSS;
+- Organização de conteúdo e assets;
+- Reutilização de dados para evitar repetição de código;
+- Animações e interações de interface;
+- Git e GitHub;
+- Build e preparação de uma aplicação para produção;
+- Desenvolvimento de uma experiência digital a partir de uma ideia pessoal.
 
 ---
 
 ## 🔮 Próximos passos
 
-O projeto continuará sendo desenvolvido gradualmente.
+O núcleo da aplicação já foi desenvolvido. Os próximos passos estão concentrados principalmente em **refinamento, otimização e publicação**.
 
-### Interface
+### 🔧 Refinamento técnico
 
-* [ ] Desenvolver a página inicial;
-* [ ] Criar o sistema de navegação;
-* [ ] Implementar a identidade visual;
-* [ ] Aplicar a paleta de cores;
-* [ ] Desenvolver o layout responsivo.
+- [ ] Revisar a navegação e o roteamento para produção;
+- [ ] Otimizar imagens de maior tamanho;
+- [ ] Remover arquivos que não são mais utilizados;
+- [ ] Executar revisão final de lint e build;
+- [ ] Revisar acessibilidade e responsividade.
 
-### Memórias
+### 🎨 Refinamento visual
 
-* [ ] Criar galeria de fotos;
-* [ ] Criar seção de histórias;
-* [ ] Criar seção de cartas e textos;
-* [ ] Criar linha do tempo;
-* [ ] Adicionar momentos especiais.
+- [ ] Fazer uma última revisão da interface;
+- [ ] Refinar detalhes de espaçamento, tipografia e animações;
+- [ ] Testar a experiência em diferentes tamanhos de tela;
+- [ ] Adicionar screenshots ao README.
 
-### Experiência
+### 🌐 Publicação
 
-* [ ] Adicionar animações;
-* [ ] Criar interações personalizadas;
-* [ ] Melhorar a experiência em dispositivos móveis;
-* [ ] Adicionar elementos surpresa;
-* [ ] Refinar detalhes visuais.
-
-### Publicação
-
-* [ ] Finalizar a primeira versão;
-* [ ] Publicar a aplicação;
-* [ ] Adicionar screenshots ao README;
-* [ ] Adicionar link da aplicação;
-* [ ] Criar uma versão final do projeto.
+- [ ] Gerar o build de produção;
+- [ ] Publicar a aplicação;
+- [ ] Adicionar o link oficial do site;
+- [ ] Realizar testes após o deploy;
+- [ ] Finalizar a primeira versão pública do VicMath.
 
 ---
 
 ## 📌 Status do projeto
 
-🟡 **Em desenvolvimento**
+🟡 **Em desenvolvimento — fase de finalização e publicação**
 
-O VicMath está sendo desenvolvido gradualmente e sua estrutura, funcionalidades e identidade visual podem sofrer alterações durante o processo.
+A maior parte da estrutura e das funcionalidades principais já foi implementada. O projeto encontra-se atualmente na etapa de **revisão final, otimização e preparação para publicação**.
 
 ---
 
@@ -279,12 +332,16 @@ O VicMath está sendo desenvolvido gradualmente e sua estrutura, funcionalidades
 
 Desenvolvido por **Matheus**.
 
-Um projeto criado com **React, TypeScript e muito carinho**, com o objetivo de transformar algumas das nossas memórias em algo que possa ser guardado e revisitado.
-
-> "Algumas memórias merecem mais do que ser lembradas. Merecem ser preservadas."
+O VicMath é um projeto pessoal criado para a **Victoria**, combinando desenvolvimento web com uma coleção de memórias, textos e momentos importantes.
 
 ---
 
-## 💛 VicMath
+> **"Algumas memórias merecem mais do que ser lembradas. Merecem ser preservadas."**
+
+<div align="center">
+
+### 💛 VicMath
 
 **Um pequeno espaço digital para uma grande história.**
+
+</div>
