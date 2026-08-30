@@ -1,52 +1,65 @@
 @import '../../../../Var.css';
 
+
+/* CONTEINER TIMELINE*/
+
 .timeLine {
-    width: 100%;
-    max-width: 1000px;
+    width: min(1100px, 92%);
     margin: 0 auto;
-    padding: 40px 20px 100px;
-    box-sizing: border-box;
+    padding: var(--space-12) 0 var(--space-10);
     text-align: center;
 }
 
+/* TITULO */
+
 .timeLine-title h2 {
-    margin: 0 0 10px;
-    font-size: 2.5rem;
-    color: var(--purple-imperial);
+    margin: 0 0 var(--space-2);
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--color-text-primary);
 }
 
 .timeLine-title > p {
-    margin: 0 0 25px;
-    font-size: 1.1rem;
-    color: var(--purple-plum)
+    margin: 0 0 var(--space-6);
+    color: var(--color-text-secondary);
+    font-size: 1rem;
 }
+
+/* CONTROLE */
 
 .timeLine-controls{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
-    margin-bottom: 20px;
+    gap: var(--space-5);
+    margin-bottom: var(--space-5);
 }
 
+/* BOTÕES */
+
 .timeLine-controls button{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    border: 2px solid var(--purple-royal);
-    background-color: var(--red-love);
-    color: var(--yellow-solar);
-    font-size: 1.4rem;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-round);
+    background-color: var(--color-surface);
+    color: var(--color-brand);
     cursor: pointer;
     transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        opacity 0.3s ease
+        transform var(--transition-normal),
+        background-color var(--transition-normal),
+        color var(--transition-normal),
+        box-shadow var(--transition-normal);
 }
 
 .timeLine-controls button:hover:not(:disabled){
-    transform: scale(1.1);
-    box-shadow: 0 0 15px var(--purple-royal);
+    transform: translateY(-2px);
+    background-color: var(--color-love);
+    color: var(--color-text-light);
+    box-shadow: var(--shadow-sm);
 }
 
 .timeLine-controls button:disabled{
@@ -54,47 +67,59 @@
     cursor: not-allowed;
 }
 
+
+/* CONTADOR */
+
 .timeLine-controls span{
     min-width: 60px;
     font-size: 0.9rem;
-    font-weight: bold;
-    color: var(--purple-imperial);
+    font-weight: 600;
+    color: var(--color-text-secondary);
 }
 
+/* INDICADORES */
 .timeline-indicators{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 20px;
+    gap: var(--space-2);
+    margin-top: var(--space-5);
 }
+
+/* INCADOR */
 
 .timeline-indicators span{
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: var(--purple-lavender);
-    opacity: 0.5;
+    width: 7px;
+    height: 7px;
+    border-radius: var(--radius-round);
+    background-color: var(--purple-200);
+    opacity: 0.35;
+    cursor: pointer;
     transition: 
-        transform 0.3s ease,
-        opacity 0.3s ease,
-        backgroud-color 0.3s ease;
+        transform var(--transition-normal),
+        opacity var(--transition-normal),
+        backgroud-color var(--transition-normal);
 }
 
+/* INDICADORES ATIVOS */
+
 .timeline-indicators span.active{
-    transform: scale(1.4);
+    transform: scale(1.5);
     opacity: 1;
-    background-color: var(--yellow-solar);
+    background-color: var(--color-love);
 }
+
+/* AREA HPORIZONTAL */
 
 .timeLine-Text{
     position: relative;
     width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
-    box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: var(--radius-xl);
 }
+
+/* CONTEUDO */
 
 .timeLine-content{
     position: relative;
@@ -102,10 +127,13 @@
     align-items: center;
     width: max-content;
     min-width: 100%;
-    height: 650px;
+    min-height: 750px;
+    padding-top: 220px;
+    padding-bottom: 220px;
     box-sizing: border-box;
 }
 
+/* CADA PONTO */
 
 .timeLine-content > *{
     flex: 0 0 100%;
@@ -114,5 +142,14 @@
     box-sizing: border-box;
 }
 
+/* RESPONSIVIDADE */
 
+@media (max-width: 700px){
+    .timeLine{
+        width: 94%;
+    }
 
+    .timeLine-content{
+        height: 600px;
+    }
+}

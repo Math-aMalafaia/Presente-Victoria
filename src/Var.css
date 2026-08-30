@@ -4,30 +4,118 @@
         Amarelo
 ]   ========================
     */
-   --yellow-solar: #ffd93d;
-   --yellow-honey: #f9c74f;
-   --yellow-golden: #e9b949;
-   --yellow-cream: #fff3b0;
-   --yellow-vanilla: #fff8d6;
+    --yellow-100: #fff8d6;
+    --yellow-200: #fff3b0;
+    --yellow-300: #ffd93d;
+    --yellow-400: #f9c74f;
+    --yellow-500: #e9b949;
 
     /*
     ========================
         Vermelho
     ========================
     */
-    --red-love: #e63946;
-    --red-cherry: #d62839;
-    --red-wide: #9d174d;
-    --red-rose: #f76c7b;
-    --red-blush: #fbc4c4;
+    --red-100: #fbc4c4;
+    --red-200: #f76c7b;
+    --red-300: #e63946;
+    --red-400: #d62839;
+    --red-500: #9d174d;
     /*
     ========================
         Roxo
     ========================
     */
-    --purple-royal: #7b2cbf;
-    --purple-imperial: #5a189a;
-    --purple-plum: #3c096c;
-    --purple-lavender: #c77dff;
-    --purple-lilac: #e8d5ff;
+    --purple-100: #e8d5ff;
+    --purple-200: #c77dff;
+    --purple-300: #7b2cbf;
+    --purple-400: #5a189a;
+    --purple-500: #3c096c;
+
+    /*
+    ============================
+        Cores semanticas
+    ============================
+    */
+
+    /* Background */
+
+    --color-bg-primary: var(--yellow-100);
+    --color-bg-secondary: var(--yellow-200);
+
+    /* Surfaces */
+
+    --color-surface: #fffdf4;
+    --color-surface-soft: var(--yellow-200);
+    --color-surface-dark: var(--purple-500);
+    --color-surface-purple: var(--purple-400);
+
+    /* Texte */
+
+    --color-text-primary: var(--purple-500);
+    --color-text-secondary: var(--purple-400);
+    --color-text-light: var(--yellow-100);
+    --color-text-muted: var(--purple-300);
+
+    /* Marca */
+
+    --color-brand: var(--purple-400);
+    --color-brand-dark: var(--purple-500);
+
+    /* Amor | destaque */
+
+    --color-love: var(--red-300);
+    --color-love-dark: var(--red-400);
+    --color-love-soft: var(--red-100);
+
+    /* Destaque */
+
+    --color-highlight: var(--yellow-300);
+    --color-highloght-soft: var(--yellow-200);
+
+    /* Bordas */
+
+    --color-border: var(--purple-100);
+    --color-border-strong: var(--purple-200);
+
+    /* Tipografia */
+
+    --font-display: "Playfair Display", Georgia, serif;
+    --font-body: "inter", Arial, sans-serif;
+
+    /* Expaçamento */
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+    --space-20: 80px;
+
+    /* BORDER RADIUS */
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-xl: 24px;
+
+    --radius-round: 999px;
+
+    /* SOMBRA */
+
+    --shadow-sm: 0 2px 8px rgba(60, 9, 108, 0.08);
+    --shadow-md: 0 8px 24px rgba(60, 9, 108, 0.12);
+    --shadow-lg: 0 16px 40px rgba(60, 9, 108, 0.16);
+
+    /* Transições */
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
 }
+
+

@@ -1,14 +1,31 @@
 @import '../../../../Var.css';
 
-.gallery-title{
+/* titulo */
+
+.gallery-title h2{
+    width: min(1200px, 92%);
+    margin: var(--space-12) auto var(--space-8);
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--color-text-primary);
+}
+
+.gallery-title p{
+    width: min(650px, 92%);
+    margin: 0 auto var(--space-10);
+    text-align: center;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
 }
 
 .gallery{
     width: min(1200px, 92%);
-    margin: 40px auto;
+    margin: 0 auto;
     columns: 3 280px;
-    column-gap: 20px;
+    column-gap: var(--space-6);
+}
+
+.gallery > *{
+    margin-bottom: var(--space-6);
 }

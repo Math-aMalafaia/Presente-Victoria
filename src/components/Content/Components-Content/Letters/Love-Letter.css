@@ -1,70 +1,98 @@
 @import '../../../../Var.css';
 
+/* CARTA */
+
 .love-letter{
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 500px;
-    margin: 60px auto;
-    padding: 30px;
-    gap: 20px;
+    width: min(500px, 100%);
+    margin: 0 auto;
+    padding: var(--space-6);
+    gap: var(--space-5);
     box-sizing: border-box;
-    border: 1px solid var(--purple-imperial);
-    border-radius: 10px;
-    background-color: var(--red-wide);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-md);
     cursor: pointer;
     overflow: hidden;
     box-shadow: 0 5px 15px var(--purple-imperial);
     transition: 
-        trasform 0.3s ease,
-        box-shadow 0.3s ease;
+        trasform var(--transition-normal),
+        box-shadow var(--transition-normal);
 }
+
+/* HOVER */
 
 .love-letter:hover{
-    box-shadow: 0px 0px 20px var(--purple-royal);
     transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
 }
+
+/* TITULO */
 
 .love-letter-title{
+    position: relative;
     margin: 0;
-    padding: 15px;
-    font-size: 24px;
-    font-weight: bold;
+    padding-bottom: var(--space-4);
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
     text-align: center;
-    color: var(--yellow-solar);
-    border-bottom: 1px solid var(--purple-imperial);
-    background-color: var(--red-rose);
+    color: var(--color-text-primary);
+    border-bottom: 1px solid var(--color-border);
 }
+
+.love-letter-title::after{
+    content: "♡";
+    display: block;
+    margin-top: var(--space-2);
+    color: var(--color-love);
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+}
+
+/* Conteudo */
 
 .love-letter-content{
-    max-height: 0;
-    overflow: hidden;
+    display: grid;
+    grid-template-rows: 0fr;
     opacity: 0;
-    transform: translateY(-10px);
     transition: 
-        max-height 0.6s ease,
-        opacity 0.4s ease,
-        transform 0.4s ease;
-    background-color: var(--red-rose);
+        grid-template-rows 0.5s ease,
+        opacity 0.35s ease;
 }
+
+.love-letter-content > div {
+    overflow: hidden;
+}
+
+/* TEXT */
 
 .love-letter-text{
-    margin: 0 0 18px;
-    font-size: 16px;
-    line-height: 1.7;
-    text-align: justify;
-    color: var(--yellow-cream);
-    background-color: var(--red-rose);
+    margin: 0 0 var(--space-5);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: left;
+    color: var(--color-text-secondary);
 }
 
+.love-letter-text:last-child{
+    margin-bottom: 0;
+}
+
+/* ESTADO ATIVO  */
+
 .love-letter.active{
-    box-shadow: 
-        0 0 25px var(--purple-royal);
+    border-color: var(--color-love-soft);
+    box-shadow: 0 12px 35px rgba(230, 57, 70, 0.15);
     transform: translateY(-3px);
 }
 
+/* CARTA ABERTA */
 .love-letter.active .love-letter-content{
-    max-height: 1000px;
+    grid-template-rows: 1fr;
     opacity: 1;
-    transform: translateY(0);
 }

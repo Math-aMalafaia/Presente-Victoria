@@ -18,7 +18,7 @@ function Letters({limit}: LettersProps){
             <h2>Cartas</h2>
             <p>Confira algumas das nossas cartas!</p>
 
-            <div className="latters-text">
+            <div className="letters-text">
                 {(displayedLetters.map(
                     (letters) => (
                         <LoveLetter 

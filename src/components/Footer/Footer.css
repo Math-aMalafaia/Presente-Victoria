@@ -1,35 +1,61 @@
 @import '../../Var.css';
 
+/* FOOTER */
+
 .footer{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: var(--purple-imperial);
-    border-top: 2px solid var(--red-love);
+    margin-top: auto;
+    background-color: var(--color-surface-dark);
+    border-top: 1px solid rgba(255, 243, 176, 0.15);
 }
+
+/* CONTEUDO */
 
 .footer-content{
-    max-width: 100%;
+    width: min(800px, 92%);
     margin: 0 auto;
-    padding: 60px 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 50px;
+    padding: var(--space-16);
+    text-align: center;
 }
+
+/* TEXTE */
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+/* LOGO */
 
 .footer-logo{
-    margin-bottom: 16px;
-    font-weight: bold;
-    color: var(--purple-plum);
-    background: linear-gradient(to right, var(--yellow-solar), var(--yellow-cream));
-    padding: 5px 10px;
-    border-radius: 5px;
-    justify-self: start;
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    color: var(--color-highlight)
 }
+
+.footer-logo::after{
+    content: " ♡";
+    color: var(--color-love);
+}
+
+/* MENSAGEM */
 
 .footer-text p{
-    font-size: 14px;
-    color: var(--yellow-cream);
-    line-height: 1.5;
+    max-width: 650px;
+    margin: 0;
+    color: var(--yellow-200);
+    font-size: 0.95rem;
+    line-height: 1.8;
 }
 
+/* DETALHE */
+
+.footer-text::after{
+    content: "♡";
+    margin-top: var(--space-4);
+    color: var(--color-love);
+    font-size: 1.3rem;
+}
