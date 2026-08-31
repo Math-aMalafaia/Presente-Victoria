@@ -16,7 +16,7 @@
 
 O **VicMath** é um projeto pessoal desenvolvido para transformar momentos importantes da história de **Matheus e Victoria** em uma experiência digital.
 
-A aplicação reúne diferentes formas de preservar essas lembranças, como **fotografias, cartas, textos e uma linha do tempo**, organizadas em uma interface criada especialmente para o projeto.
+A aplicação reúne diferentes formas de preservar essas lembranças — **fotografias, cartas, textos, músicas e uma linha do tempo** — em uma interface criada especialmente para o projeto.
 
 Mais do que um exercício de desenvolvimento web, o VicMath nasceu com um propósito pessoal: criar um lugar onde algumas memórias possam ser revisitadas e preservadas ao longo do tempo.
 
@@ -40,11 +40,12 @@ Atualmente, o projeto conta com diferentes áreas destinadas à apresentação d
 - 🏠 **Página inicial** — apresenta o projeto e seus principais conteúdos;
 - 📸 **Galeria** — reúne fotografias e memórias em uma composição visual;
 - 💌 **Cartas** — apresenta cartas e textos escritos para a Victoria;
-- 🕰️ **Linha do tempo** — organiza momentos importantes da história em uma timeline interativa;
-- 🧩 **Componentes reutilizáveis** — elementos como imagens, cartas e pontos da timeline são organizados para evitar repetição de código;
+- 🕰️ **Linha do tempo** — organiza momentos importantes da história em uma timeline horizontal e interativa;
+- 🎵 **Músicas** — apresenta músicas especiais por meio de cards reutilizáveis;
+- 🧩 **Componentes reutilizáveis** — elementos como imagens, cartas, cards de música e pontos da timeline são separados em componentes próprios;
 - 🎨 **Identidade visual personalizada** — interface construída a partir de uma paleta própria de amarelos, vermelhos e roxos;
 - ✨ **Interações e animações** — pequenos movimentos e efeitos visuais utilizados para tornar a experiência mais dinâmica;
-- 📱 **Interface responsiva** — estrutura pensada para diferentes tamanhos de tela.
+- 📱 **Interface adaptável** — estilos pensados para diferentes tamanhos de tela.
 
 ---
 
@@ -52,11 +53,11 @@ Atualmente, o projeto conta com diferentes áreas destinadas à apresentação d
 
 | Tecnologia | Utilização |
 |---|---|
-| **React** | Construção da interface e dos componentes |
+| **React 19** | Construção da interface e dos componentes |
 | **TypeScript** | Tipagem e segurança durante o desenvolvimento |
 | **Vite** | Ambiente de desenvolvimento e geração do build |
 | **CSS** | Estilização, responsividade e identidade visual |
-| **React Router** | Navegação entre as páginas da aplicação |
+| **React Router DOM** | Navegação entre as páginas da aplicação |
 | **Lucide React** | Ícones utilizados na interface |
 | **React Icons** | Biblioteca complementar de ícones |
 | **Phosphor Icons** | Biblioteca de ícones utilizada no projeto |
@@ -125,9 +126,9 @@ Além das cores base, o projeto utiliza variáveis semânticas em `Var.css` para
 
 ---
 
-## 📂 Estrutura do projeto
+## 🧱 Arquitetura do projeto
 
-A aplicação utiliza uma organização baseada em **componentes e páginas**, separando responsabilidades e facilitando a manutenção do código.
+A aplicação utiliza uma organização baseada em **páginas, componentes reutilizáveis e estilos separados por responsabilidade**.
 
 ```text
 Presente-Victoria/
@@ -135,6 +136,12 @@ Presente-Victoria/
 ├── public/
 │   ├── favicon.svg
 │   └── icons.svg
+│
+├── screenshots/
+│   ├── Home.png
+│   ├── Gallery.png
+│   ├── Letter.png
+│   └── TimeLine.png
 │
 ├── src/
 │   ├── assets/
@@ -146,6 +153,7 @@ Presente-Victoria/
 │   │   │   └── Components-Content/
 │   │   │       ├── Gallery/
 │   │   │       ├── Letters/
+│   │   │       ├── Music/
 │   │   │       └── TimeLine/
 │   │   ├── Footer/
 │   │   └── Header/
@@ -154,6 +162,7 @@ Presente-Victoria/
 │   │   ├── Gallery/
 │   │   ├── Home/
 │   │   ├── Letters/
+│   │   ├── Music/
 │   │   └── TimeLine/
 │   │
 │   ├── App.css
@@ -171,11 +180,13 @@ Presente-Victoria/
 └── README.md
 ```
 
+A separação entre **pages** e **components** permite que cada página funcione como uma composição de componentes menores. Isso fica especialmente evidente na Galeria, Cartas, Linha do Tempo e na nova área de Músicas, que possuem componentes próprios para estruturar seus conteúdos.
+
 ---
 
 ## 🧭 Navegação
 
-A aplicação é organizada em páginas independentes utilizando **React Router**.
+A aplicação é organizada em páginas independentes utilizando **React Router DOM**.
 
 | Rota | Página |
 |---|---|
@@ -183,6 +194,17 @@ A aplicação é organizada em páginas independentes utilizando **React Router*
 | `/Gallery` | Galeria de memórias |
 | `/Cartas` | Cartas e textos |
 | `/TimeLine` | Linha do tempo |
+| `/Music` | Músicas especiais |
+
+---
+
+## 🎵 Área de músicas
+
+A página de músicas foi estruturada seguindo o mesmo princípio de reutilização utilizado nas outras áreas do projeto.
+
+A implementação possui um componente principal `Music` e um componente `MusicCard`, permitindo que cada música seja apresentada de forma independente sem precisar repetir toda a estrutura visual do card.
+
+Os estilos também são separados entre a área geral (`Music.css`) e os cards individuais (`MusicCard.css`), mantendo a organização e facilitando futuras alterações no design.
 
 ---
 
@@ -250,7 +272,7 @@ O projeto é hospedado pela **Vercel** e integrado ao repositório do GitHub par
 
 ## 📸 Screenshots
 
-Screenshots da aplicação poderão ser adicionadas futuramente para apresentar visualmente as principais páginas do projeto.
+Algumas telas principais da aplicação estão disponíveis abaixo.
 
 ### 🏠 Página inicial
 
@@ -267,6 +289,8 @@ Screenshots da aplicação poderão ser adicionadas futuramente para apresentar 
 ### 🕰️ Linha do tempo
 
 ![Linha do tempo do VicMath](./screenshots/TimeLine.png)
+
+> A área de músicas ainda não possui screenshot dedicada no README.
 
 ---
 
@@ -286,6 +310,7 @@ Entre os principais conceitos trabalhados estão:
 - Organização de conteúdo e assets;
 - Reutilização de dados para evitar repetição de código;
 - Animações e interações de interface;
+- Separação entre páginas e componentes;
 - Git e GitHub;
 - Build e preparação de uma aplicação para produção;
 - Deploy e hospedagem de uma aplicação React;
@@ -303,7 +328,7 @@ Com o site publicado, os próximos passos estão concentrados principalmente em 
 - [ ] Otimizar imagens de maior tamanho;
 - [ ] Remover arquivos que não são mais utilizados;
 - [x] Executar revisão final de lint e build;
-- [x] Revisar acessibilidade e responsividade;
+- [ ] Continuar aprimorando a experiência em telas menores;
 - [ ] Monitorar possíveis problemas após o deploy.
 
 ### 🎨 Refinamento visual
@@ -328,7 +353,9 @@ Com o site publicado, os próximos passos estão concentrados principalmente em 
 
 🟢 **Publicado — em evolução contínua**
 
-A primeira versão do VicMath está disponível online. O projeto continuará recebendo melhorias técnicas e visuais conforme novas ideias e refinamentos forem desenvolvidos.
+A aplicação está publicada e suas principais áreas já estão estruturadas: **Home, Galeria, Cartas, Linha do Tempo e Músicas**.
+
+O foco atual do projeto está em refinamento visual, experiência em diferentes telas, otimização dos assets e pequenos aprimoramentos de código.
 
 ---
 
@@ -336,7 +363,7 @@ A primeira versão do VicMath está disponível online. O projeto continuará re
 
 Desenvolvido por **Matheus**.
 
-O VicMath é um projeto pessoal criado para a **Victoria**, combinando desenvolvimento web com uma coleção de memórias, textos e momentos importantes.
+O VicMath é um projeto pessoal criado para a **Victoria**, combinando desenvolvimento web com uma coleção de memórias, textos, músicas e momentos importantes.
 
 ---
 
