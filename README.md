@@ -6,6 +6,8 @@
 
 **Um presente em forma de site, construído com código, memórias e carinho.** ❤️
 
+### 🌐 [Visite o VicMath](https://vicmath.vercel.app/)
+
 </div>
 
 ---
@@ -44,8 +46,6 @@ Atualmente, o projeto conta com diferentes áreas destinadas à apresentação d
 - ✨ **Interações e animações** — pequenos movimentos e efeitos visuais utilizados para tornar a experiência mais dinâmica;
 - 📱 **Interface responsiva** — estrutura pensada para diferentes tamanhos de tela.
 
-> O projeto continua recebendo refinamentos visuais e técnicos antes da publicação da primeira versão.
-
 ---
 
 ## 🛠️ Tecnologias
@@ -63,6 +63,7 @@ Atualmente, o projeto conta com diferentes áreas destinadas à apresentação d
 | **ESLint** | Análise e padronização do código |
 | **Git** | Controle de versão |
 | **GitHub** | Hospedagem do código-fonte |
+| **Vercel** | Hospedagem e deploy da aplicação |
 
 ---
 
@@ -165,12 +166,10 @@ Presente-Victoria/
 ├── index.html
 ├── package.json
 ├── package-lock.json
-├── tsconfig.json
 ├── vite.config.ts
+├── vercel.json
 └── README.md
 ```
-
-> A estrutura pode continuar evoluindo conforme novas funcionalidades e refinamentos forem adicionados.
 
 ---
 
@@ -241,15 +240,17 @@ npm run preview
 
 ## 🌐 Demonstração
 
-🚧 **O site ainda não está publicado.**
+O **VicMath está publicado e disponível online.** 💛
 
-Após a conclusão da revisão final e do processo de deploy, o endereço da aplicação será adicionado nesta seção.
+### 👉 [Victoria & Math — VicMath](https://vicmath.vercel.app/)
+
+O projeto é hospedado pela **Vercel** e integrado ao repositório do GitHub para facilitar novos deploys conforme o código evolui.
 
 ---
 
 ## 📸 Screenshots
 
-As screenshots serão adicionadas após a publicação da primeira versão do VicMath.
+Screenshots da aplicação poderão ser adicionadas futuramente para apresentar visualmente as principais páginas do projeto.
 
 ### 🏠 Página inicial
 
@@ -287,44 +288,47 @@ Entre os principais conceitos trabalhados estão:
 - Animações e interações de interface;
 - Git e GitHub;
 - Build e preparação de uma aplicação para produção;
+- Deploy e hospedagem de uma aplicação React;
 - Desenvolvimento de uma experiência digital a partir de uma ideia pessoal.
 
 ---
 
 ## 🔮 Próximos passos
 
-O núcleo da aplicação já foi desenvolvido. Os próximos passos estão concentrados principalmente em **refinamento, otimização e publicação**.
+Com o site publicado, os próximos passos estão concentrados principalmente em **refinamento, otimização e evolução da experiência**.
 
 ### 🔧 Refinamento técnico
 
-- [ ] Revisar a navegação e o roteamento para produção;
+- [ ] Revisar a navegação e o roteamento em produção;
 - [ ] Otimizar imagens de maior tamanho;
 - [ ] Remover arquivos que não são mais utilizados;
 - [ ] Executar revisão final de lint e build;
-- [ ] Revisar acessibilidade e responsividade.
+- [ ] Revisar acessibilidade e responsividade;
+- [ ] Monitorar possíveis problemas após o deploy.
 
 ### 🎨 Refinamento visual
 
 - [ ] Fazer uma última revisão da interface;
 - [ ] Refinar detalhes de espaçamento, tipografia e animações;
 - [ ] Testar a experiência em diferentes tamanhos de tela;
-- [ ] Adicionar screenshots ao README.
+- [ ] Adicionar screenshots ao README;
+- [ ] Finalizar o favicon e a identidade visual da aba do navegador.
 
 ### 🌐 Publicação
 
-- [ ] Gerar o build de produção;
-- [ ] Publicar a aplicação;
-- [ ] Adicionar o link oficial do site;
-- [ ] Realizar testes após o deploy;
-- [ ] Finalizar a primeira versão pública do VicMath.
+- [x] Gerar o build de produção;
+- [x] Publicar a aplicação;
+- [x] Adicionar o link oficial do site;
+- [x] Realizar o primeiro deploy;
+- [x] Integrar o projeto ao fluxo de deploy da Vercel.
 
 ---
 
 ## 📌 Status do projeto
 
-🟡 **Em desenvolvimento — fase de finalização e publicação**
+🟢 **Publicado — em evolução contínua**
 
-A maior parte da estrutura e das funcionalidades principais já foi implementada. O projeto encontra-se atualmente na etapa de **revisão final, otimização e preparação para publicação**.
+A primeira versão do VicMath está disponível online. O projeto continuará recebendo melhorias técnicas e visuais conforme novas ideias e refinamentos forem desenvolvidos.
 
 ---
 
@@ -343,5 +347,7 @@ O VicMath é um projeto pessoal criado para a **Victoria**, combinando desenvolv
 ### 💛 VicMath
 
 **Um pequeno espaço digital para uma grande história.**
+
+🌐 **[Acessar o site](https://vicmath.vercel.app/)**
 
 </div>
