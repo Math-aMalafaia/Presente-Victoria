@@ -299,20 +299,20 @@ Com o site publicado, os próximos passos estão concentrados principalmente em 
 
 ### 🔧 Refinamento técnico
 
-- [ ] Revisar a navegação e o roteamento em produção;
+- [x] Revisar a navegação e o roteamento em produção;
 - [ ] Otimizar imagens de maior tamanho;
 - [ ] Remover arquivos que não são mais utilizados;
-- [ ] Executar revisão final de lint e build;
-- [ ] Revisar acessibilidade e responsividade;
+- [x] Executar revisão final de lint e build;
+- [x] Revisar acessibilidade e responsividade;
 - [ ] Monitorar possíveis problemas após o deploy.
 
 ### 🎨 Refinamento visual
 
-- [ ] Fazer uma última revisão da interface;
-- [ ] Refinar detalhes de espaçamento, tipografia e animações;
-- [ ] Testar a experiência em diferentes tamanhos de tela;
-- [ ] Adicionar screenshots ao README;
-- [ ] Finalizar o favicon e a identidade visual da aba do navegador.
+- [x] Fazer uma última revisão da interface;
+- [x] Refinar detalhes de espaçamento, tipografia e animações;
+- [x] Testar a experiência em diferentes tamanhos de tela;
+- [x] Adicionar screenshots ao README;
+- [x] Finalizar o favicon e a identidade visual da aba do navegador.
 
 ### 🌐 Publicação
 
