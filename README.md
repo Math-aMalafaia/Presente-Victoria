@@ -254,19 +254,19 @@ Screenshots da aplicação poderão ser adicionadas futuramente para apresentar 
 
 ### 🏠 Página inicial
 
-*Em breve.*
+![Página inicial do VicMath](./screenshots/Home.png)
 
 ### 📸 Galeria
 
-*Em breve.*
+![Galeria do VicMath](./screenshots/Gallery.png)
 
 ### 💌 Cartas
 
-*Em breve.*
+![Cartas do VicMath](./screenshots/Letter.png)
 
 ### 🕰️ Linha do tempo
 
-*Em breve.*
+![Linha do tempo do VicMath](./screenshots/TimeLine.png)
 
 ---
 
