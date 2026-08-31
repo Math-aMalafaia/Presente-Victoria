@@ -2,6 +2,7 @@ import './Content.css'
 import Gallery from './Components-Content/Gallery/Gallery'
 import Letters from './Components-Content/Letters/Letters'
 import TimeLine from './Components-Content/TimeLine/TimeLine';
+import Music from './Components-Content/Music/Music';
 
 function Content(){
     return(
@@ -16,6 +17,8 @@ function Content(){
             <Letters limit={6}/>
 
             <TimeLine />
+
+            <Music limit={6}/>
         </main>
     )
 }

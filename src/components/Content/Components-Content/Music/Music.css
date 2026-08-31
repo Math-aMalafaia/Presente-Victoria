@@ -1,0 +1,53 @@
+@import '../../../../Var.css';
+
+/* TITULO */
+
+.music-title h2{
+    width: min(1200px, 92%);
+    margin: var(--space-12) auto var(--space-8);
+    text-align: center;
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--color-text-primary);
+}
+
+.music-title p{
+    width: min(650px, 92%);
+    margin: 0 auto var(--space-10);
+    text-align: center;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+}
+
+/* LSIA DE MUSICA */
+
+.music-list{
+    width: min(1100px, 92%);
+    margin: 0 auto var(--space-16);
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-6);
+    align-items: start;
+}
+
+/* RESPOSIVIDADE */
+
+@media (max-width: 700px){
+    .music-list{
+        width: 94%;
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+    }
+
+    .music-title h2{
+        margin-top: var(--space-10);
+        font-size: clamp(1.8rem, 8vw, 2.3rem);
+    }
+
+    .music-title p{
+        width: 90%;
+        margin-bottom: var(--space-8);
+        font-size: 0.95rem;
+    }
+}

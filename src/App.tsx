@@ -5,6 +5,7 @@ import Home from './pages/Home/Home'
 import GalleryPage from './pages/Gallery/GalleryPage';
 import LettersPage from './pages/Letters/LettersPage';
 import TimeLinePage from './pages/TimeLine/TimeLinePage';
+import MusicPage from './pages/Music/MusicPage';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/Gallery" element={<GalleryPage/>}/>
         <Route path="/Cartas" element={<LettersPage/>}/>
         <Route path="/TimeLine" element={<TimeLinePage/>}/>
+        <Route path="/Music" element={<MusicPage/>}/>
       </Routes>
   )
 }
