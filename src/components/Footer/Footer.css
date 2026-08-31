@@ -59,3 +59,20 @@
     color: var(--color-love);
     font-size: 1.3rem;
 }
+
+/* RESPOSIVIDADE */
+
+@media (max-width: 700px){
+    .footer-content{
+        width: 94%;
+        padding: var(--space-10) var(--space-4);
+    }
+
+    .footer-logo{
+        font-size: 1.5rem;
+    }
+    
+    .footer-text{
+        font-size: 0.85rem;
+    }
+}

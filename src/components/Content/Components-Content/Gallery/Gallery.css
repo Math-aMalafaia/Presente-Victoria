@@ -29,3 +29,17 @@
 .gallery > *{
     margin-bottom: var(--space-6);
 }
+
+/* RESPOSIVIDADE */
+
+@media (max-width: 700px) {
+    .gallery{
+        width: 94%;
+        columns: 1;
+        column-gap: 0;
+    }
+
+    .gallery > *{
+        margin-bottom: var(--space-5);
+    }
+}

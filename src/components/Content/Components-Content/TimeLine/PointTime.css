@@ -148,3 +148,33 @@
     text-align: center;
     color: var(--color-text-secondary);
 }
+
+/* RESPOSIVIDADE */
+
+@media (max-width: 700px){
+    .pointTime-card{
+        width: min(300px, 82%);
+        padding: 16px;
+    }
+
+    .pointTime-img{
+        height: 150px;
+    }
+
+    .pointTime-title{
+        font-size: 1.1rem;
+    }
+
+    .pointTime-text{
+        font-size: 0.9rem;
+    }
+
+    .pointTime-marker{
+        width: 46px;
+        height: 46px;
+    }
+
+    .pointTime-marker span{
+        font-size: 0.65rem;
+    }
+}

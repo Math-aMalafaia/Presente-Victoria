@@ -22,7 +22,7 @@ html, body, #root{
 body{
   min-height: 100vh;
   font-family: var(--font-body);
-  font-family: 16px;
+  font-size: 16px;
   line-height: 1.6;
   color: var(--color-text-primary);
   -webkit-font-smoothing: antialiased;
@@ -57,4 +57,17 @@ button{
 
 main{
   flex: 1;
+}
+
+/* Resposividade globla */
+
+@media (max-width: 700px){
+  body{
+    font-size: 15px;
+  }
+
+  main{
+    width: 100%;
+    overflow-x: hidden;
+  }
 }

@@ -91,16 +91,24 @@
 
 @media (max-width: 700px) {
     .header-content{
-        width: min(94%, 1200px);
-        flex-direction: column;
-        justify-content: center;
+        width: 94%;
+        min-height: auto;
         padding: var(--space-3) 0;
+        flex-direction: column;
         gap: var(--space-3);
     }
 
+    .header-logo{
+        font-size: 1.5rem;
+    }
+
+    .header-nav{
+        width: 100%;
+    }
 
     .header-nav-list{
-        gap: var(--space-4);
+        width: 100%;
+        gap: var(--space-4) var(--space-5);
         flex-wrap: wrap;
         justify-content: center;
     }

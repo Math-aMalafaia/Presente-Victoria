@@ -96,3 +96,22 @@
     grid-template-rows: 1fr;
     opacity: 1;
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px){
+     .love-letter{
+        width: 94%;
+        padding: 18px;
+        gap: var(--space-4);
+     }
+
+     .love-letter-title{
+        font-size: 1.3rem;
+     }
+
+     .love-letter-text{
+        font-size: 0.92rem;
+        line-height: 1.7;
+     }
+}

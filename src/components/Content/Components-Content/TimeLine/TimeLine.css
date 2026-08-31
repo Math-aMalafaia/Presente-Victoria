@@ -147,9 +147,29 @@
 @media (max-width: 700px){
     .timeLine{
         width: 94%;
+        padding-top: var(--space-10);
+        padding-bottom: var(--space-10);
     }
 
+    .timeLine-title h2{
+        font-size: 2rem;
+    }
+
+    .timeLine-title p{
+        font-size: 0..9rem;
+        padding: 0 var(--space-2);
+    }
+
+
     .timeLine-content{
-        height: 600px;
+        min-height: 520px;
+        height: 520px;
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
+
+    .timeLine-content > *{
+        flex: 0 0 100%;
+        width: 100%;
     }
 }
