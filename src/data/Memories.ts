@@ -5,6 +5,7 @@ import Teamo from "../assets/Memory/Te-amo.jpg";
 import NMovie from "../assets/Memory/N-Movie.jpg";
 import Roupa1 from "../assets/Memory/Roupa-1.jpg";
 import Roupa2 from "../assets/Memory/Roupa-2.jpg";
+import BeijoB from "../assets/Memory/Beijo-B.png";
 
 export const memory = [
     {
@@ -55,6 +56,12 @@ export const memory = [
         title: "Desfile",
         description: "Amei, muito linda, não tem como apaixonei"
     },
-        
+    
+    {
+        id:8,
+        img: BeijoB,
+        title: "Não quero te soltar",
+        description: "Eu esatva com tanta saldades, que mesmo sabendo que precisava ir, não queria te largar"
+    },
 
 ]
